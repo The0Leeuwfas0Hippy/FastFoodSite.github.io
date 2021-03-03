@@ -75,6 +75,6 @@ index_ChooseCustomFood.onclick = function()
 {
     $(function()
     {
-         $(".CustomFoodItems").toggle();
+         $(".CustomFoodItems").toggle(1000);
     });
 }

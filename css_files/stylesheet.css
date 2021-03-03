@@ -384,6 +384,7 @@ body
     width: 90%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    height: 25em;
 }
 
 .MakeCustomOrder_FormHeader
@@ -425,19 +426,27 @@ body
     align-items: center;
     background-color: white;
     border: none;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     box-shadow: 1px 4px 6px 6px  rgb(0, 0, 93);
+    cursor: pointer;
 }
 
 .MakeCustomOrder_Form form button:focus
 {
     outline: none;
-    
+    color: white;
+    background-color: rgb(0, 0, 70);
 }
 
-.CustomFoodItems
+.CustomFoodItems_Container
 {
     display: none;
+    margin-top: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* dis */
+    background-image: linear-gradient(to top, blue, white);
     /* visibility: hidden; */
 }
 
