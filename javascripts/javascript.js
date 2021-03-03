@@ -31,7 +31,7 @@ $(function()
             and if 'login' button div class is active, then set correct form to active
             and set said form to be properly visible 
  */
-index_LoginButton.onClick = function()
+index_LoginButton.onclick = function()
 {
     $(function()
                 {
@@ -51,7 +51,7 @@ index_LoginButton.onClick = function()
      );
 }
 
-index_RegisterAccountButton.onClick = function()
+index_RegisterAccountButton.onclick = function()
 {
     $(function()
                 {
@@ -75,6 +75,6 @@ index_ChooseCustomFood.onclick = function()
 {
     $(function()
     {
-         $(".CustomFoodItems").toggle(1000);
+         $(".CustomFoodItems").toggle();
     });
 }

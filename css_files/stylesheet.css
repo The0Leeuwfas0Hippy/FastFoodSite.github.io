@@ -406,6 +406,7 @@ body
 .MakeCustomOrder_Form
 {
     margin-top: 0em;
+    padding: 1em;
 }
 /* .MakeCustomOrder_Form form
 {
@@ -422,11 +423,22 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 4px 6px 6px  rgb(0, 0, 93);
+}
+
+.MakeCustomOrder_Form form button:focus
+{
+    outline: none;
+    
 }
 
 .CustomFoodItems
 {
     display: none;
+    /* visibility: hidden; */
 }
 
 .CustomFoodItems span
