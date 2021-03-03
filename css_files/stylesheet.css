@@ -1,0 +1,442 @@
+
+body
+{
+    margin: 0em;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    width: 100%;
+   position: absolute;
+   background-image: url("C:/Users/CrunchTime/Desktop/Zenny/Web_Development/FastFoodJoint/imagery/LoginBackground.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TopOfIndexPage
+{
+    /* background-image: url("C:/Users/CrunchTime/Desktop/FastFoodJoint/imagery/LoginBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    margin: 0em;
+    width: 100%;
+    /* padding-bottom: 1em; */
+}
+
+/* .TopMenuTab
+{
+    position: absolute;
+    margin-bottom: 5em;
+} */
+
+.Menu_Tab
+{
+    
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, blue, transparent);
+    /* height: 5%; */
+    border: none;
+    /* border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
+    padding: 0.5em;
+    margin: auto;
+    /* width: 100%; */
+    /* z-index: -1; */
+    /* position: absolute; */
+}
+
+.LogoTab
+{
+    color: white;
+    font-size: 2.8em;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.LogoTab text
+{
+    height: 100%;
+    margin: 0em;
+    background-image: linear-gradient(to right, blue, white, blue);
+}
+
+
+.Menu_Tab_SearchBar
+{
+    display: flex;
+    justify-content: center;
+    /* padding: 0em; */
+    margin-left: 3em;
+    margin-bottom: 0.5em;
+    padding-bottom: 5px;
+    /* height: 100%; */
+    border-radius: 10px;
+    width: 40%;
+    background-color: white;
+}
+.Menu_Tab_SearchBar input
+{
+    margin-bottom: 0em;
+    /* margin-right: 2em; */
+    height: 100%; 
+    width: 190%;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: inherit;
+    border-radius: 10px;
+}
+#index_Menu_Tab_SearchBar:focus
+{
+    outline: none;
+      /* transition-duration: 2s; */
+    /* transform: 50; */
+}
+
+
+.Menu_Tab_SearchBar button
+{
+    width: 40%;
+    border-radius: 10px;
+    margin: 3px;
+    height: 95%;
+    color: white;
+    background-color:  rgb(31, 31, 100);
+    /* background-image: linear-gradient(to bottom, blue,white, blue); */
+    /* border-style: dotted; */
+    /* box-shadow: 0px 0px 1px 2px blue; */
+    border: white;
+    border-style: double;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.Menu_Tab_SearchBar button:hover
+{
+    color: white;
+    /* border: blue; */
+    border-style: outset;
+    cursor: pointer;
+    
+}
+
+.MenuTab_Menu 
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    /* padding: 1em; */
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+    /* background-image: linear-gradient(to bottom right, white,blue,white); */
+    /* background-color: white; */
+    /* box-shadow: 3px 1px 3px 0px blue; */
+}
+
+.MenuTab_Menu a
+{
+    size: initial;
+    width: 180px;
+    height: 35px;
+    margin: 6px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 70);
+    transition: color 0.7s;
+    text-decoration: none;
+    font-weight: bold;    
+    box-shadow: 3px 2px 3px 1px blue;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.MenuTab_Menu a:hover
+{
+    border-bottom: 2px dashed;
+    /* color: blue; */
+    /* transition: border-bottom 0.2s; */
+}
+.MenuTab_Menu a p
+{
+    margin: auto;
+}
+#index_LoginLink, #index_CreateAccountLink
+{
+    background-color: rgb(0, 0, 70);
+    color: white;
+} 
+
+.ProductSliders
+{
+    /* margin-bottom: 2em; */
+    padding-bottom: 0em;
+}
+
+.Products_SliderHeader
+{
+    /* background-color: blue; */
+    background-image: linear-gradient(to top, blue, blue, transparent);
+    width: 24%;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    /* box-shadow: 5px 0px 4px 4px blue; */
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 40px;
+}
+.Products_SliderHeader h2
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4em;
+    color: white;
+    margin: 0em;
+    text-shadow: 3px 4px rgb(0, 0, 83);
+    /* margin-left: 1em; */
+}
+
+.Products_Slider
+{
+    white-space: nowrap;
+    overflow: auto;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    background-image: linear-gradient(to bottom, blue, blue, transparent);
+    
+}
+
+.EachProductOnSlider
+{
+    width: 380px;
+    display: inline-block;
+    /* zoom: 1; */
+    /* float: none; */
+    height: 295px;
+    /* border: 5px double rgb(0, 0, 70); */
+    /* border: 4px medium rgb(0, 0, 51); */
+    margin: 10px;
+    /* padding-bottom: 6px; */
+    box-shadow: 0px 2px 6px 7px white;
+    z-index: 25;
+    border-radius: 25px;
+}
+
+.EachProductOnSlider:hover
+{
+    z-index: 1000;
+    box-shadow: 0px 2px 6px 7px rgb(0, 0, 70);
+    /* width: 50em;
+    height: 35em;
+    transition-duration: 1s; */
+    /* position: asbsolute; */
+    /* left: 5;
+    top: 5; */
+}
+
+.EachProductOnSlider:hover > .ProductPrice button
+{
+    background-color:  rgb(0, 0, 70);
+    color: white;
+}
+.imageEmbed
+{
+    height: 80%;
+    /* margin: 2px; */
+}
+.imageEmbed img
+{
+    height: 100%;
+    width: 100%;
+     /* border-radius: 25px; */
+     border-top-right-radius: 25px;
+     border-top-left-radius: 25px;
+    /* z-index: 4; */
+}
+
+.ProductPrice
+{
+    height: 20%;
+    /* bottom: 0em; */
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+.ProductPrice button
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(0, 0, 70);
+    background-color: white;
+    /* box-shadow: 1px 1px 7px 6px blue; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+#index_Products_SliderHeader2
+{
+    background-image: linear-gradient(to top, white, white, transparent);
+}
+#index_Products_SliderHeader2 h2
+{
+    text-shadow: 0px 3px 4px white;
+    color: rgb(0, 0, 83);
+}
+.ProductSlider2
+{
+    white-space: nowrap;
+    overflow: auto;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-top: 0em;
+    padding-bottom: 2em;
+    height: 396px;
+    /* display: flex;
+    justify-content: space-evenly; */
+    background-color: white;
+    /* padding: 6px; */
+    /* background-image: linear-gradient(to bottom, white, white); */
+    /* opacity: 2; */
+}
+.EachProductOnSlider2
+{
+    display: inline-block;
+    margin: 1em;
+    margin-top: 3em;
+    /* margin-bottom: 1em;
+    padding-bottom: 1em; */
+    width: 395px;
+    height: 330px;
+    /* background-color: white; */
+    /* z-index: 2; */
+    /* box-shadow: 0px 4px 5px 5px rgb(0, 0, 83); */
+    border-radius: 20px;
+    /* transform: perspective(1300px) rotateY(20deg); */
+    /* background-image: linear-gradient(to bottom, blue, white, white, white, white); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.EachProductOnSlider2:hover
+{
+    /* zoom: 110%; */
+    /* transition-duration: 2s; */
+}
+
+/* .EachProductOnSlider2 img
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 0em;
+} */
+
+#index_ChipsPrices
+{
+    height: 20%;
+    /* border: orangered; */
+    /* margin-bottom: 1em;
+    padding-bottom: 2em; */
+}
+
+#index_ChipsPrices button
+{
+    /* background-color: orangered; */
+    box-shadow: 0px 4px 5px 5px rgb(1, 1, 32);
+    border-radius: 30px;
+    width: 98%;
+    bottom: 2px;
+}
+.MiddleOfPage
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    width: 100%;
+    /* background-color: transparent; */
+    background-image: url("C:/Users/CrunchTime/Desktop/Zenny/Web_Development/FastFoodJoint/imagery/LoginBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MakeCustomOrder
+{
+    background-color: white;
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.MakeCustomOrder_FormHeader
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    /* font-style: oblique; */
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 70);
+    /* width: 100%; */
+    margin-bottom: 0em;
+}
+
+.MakeCustomOrder_Form
+{
+    margin-top: 0em;
+}
+/* .MakeCustomOrder_Form form
+{
+    display: inline-block;
+} */
+.MakeCustomOrder_Form form button
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(0, 0, 70);
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CustomFoodItems
+{
+    display: none;
+}
+
+.CustomFoodItems span
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(0, 0, 70);
+    display: block;
+    margin: 6px;
+    /* justify-content: center; */
+    width: 100%;
+}
