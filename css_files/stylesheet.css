@@ -2,8 +2,6 @@
 body
 {
     margin: 0em;
-    margin-bottom: 3em;
-    padding-bottom: 2em;
     width: 100%;
    position: absolute;
    background-image: url("C:/Users/CrunchTime/Desktop/Zenny/Web_Development/FastFoodJoint/imagery/LoginBackground.jpg");
@@ -369,7 +367,6 @@ body
     justify-content: center;
     margin-top: 1.5em;
     padding-top: 1.5em;
-    margin-bottom: 1.5em;
     padding-bottom: 1.5em;
     width: 100%;
     /* background-color: transparent; */
@@ -415,6 +412,7 @@ body
 } */
 .MakeCustomOrder_Form form button
 {
+    width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.5em;
@@ -439,13 +437,19 @@ body
     background-color: rgb(0, 0, 70);
 }
 
+.ChooseTypeOfFood
+{
+    width: 20%;
+}
+
 .CustomFoodItems_Container
 {
     display: none;
     margin-top: 15px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    /* dis */
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(to top, blue, white);
     /* visibility: hidden; */
 }

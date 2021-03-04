@@ -36,7 +36,7 @@ index_LoginButton.onclick = function()
     $(function()
                 {
                     //toggle the active class on both the login form and the registration form
-                    index_LoginButton.ClassList.toggle("active");
+                    // index_LoginButton.ClassList.toggle("active");
 
                     $(LoginForm).css
                                     ({
@@ -75,6 +75,6 @@ index_ChooseCustomFood.onclick = function()
 {
     $(function()
     {
-         $(".CustomFoodItems").toggle(1000);
+         $(".CustomFoodItems_Container").toggle(1000);
     });
 }
