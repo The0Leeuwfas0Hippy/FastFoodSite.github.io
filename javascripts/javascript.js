@@ -71,10 +71,10 @@ index_RegisterAccountButton.onclick = function()
 
 /*The Code below handles the Custom Order making
 */
-index_ChooseCustomFood.onclick = function()
-{
-    $(function()
-    {
-         $(".CustomFoodItems_Container").toggle(1000);
-    });
-}
+// index_ChooseCustomFood.onclick = function()
+// {
+//     $(function()
+//     {
+//          $(".CustomFoodItems_Container").toggle(1000);
+//     });
+// }
