@@ -94,44 +94,47 @@
 
 .OrderCustomization_buttons
 {
-    width: 100%;
-    height: 10%;
+    /* width: 100%; */
+    height: 15%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* margin: 0.8em; */
+    /* align-items: center; */
 }
 
 .OrderCustomization_buttons button
 {
-    width: 100%;
+    width: 20%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.5em;
-    color: rgb(0, 0, 70);
-    /* margin-top: 0.5em; */
-    padding-top: 0.5em;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: white;
+    color: white;
+    background-color: rgb(0, 0, 70);
+    margin-bottom: 0.5em;
     border: none;
+    /* margin: 5px; */
     /* border-top-left-radius: 25px;
     border-top-right-radius: 25px; */
-    box-shadow: 1px 4px 6px 6px  rgb(0, 0, 93);
+    box-shadow: 0px 4px 6px 6px  rgb(0, 0, 93);
     cursor: pointer;
+}
+
+.OrderCustomization_buttons button:focus
+{
+    outline: none;
 }
 
 .CustomFoodItems_Container
 {
     display: none;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     /* border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px; */
     display: flex;
     justify-content: center;
     /* background-image: linear-gradient(to top, rgb(95, 95, 235), white); */
     /* visibility: hidden; */
-    height: 80%;
+    height: 85%;
 }
 
 .MainFoodItems

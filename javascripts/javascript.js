@@ -17,6 +17,7 @@ var LoginForm = document.getElementsByClassName("Login"),
 //MakeCustomOrder form
 index_ChooseCustomFood = document.getElementById("index_ChooseCustomFood");
 
+//the code below runs immediately when the whole class is loaded
 $(function()
             {
                 // method for the Product Sliders to Dropdown sequentially one after another 
@@ -50,7 +51,6 @@ index_LoginButton.onclick = function()
                 }
      );
 }
-
 index_RegisterAccountButton.onclick = function()
 {
     $(function()
@@ -69,12 +69,13 @@ index_RegisterAccountButton.onclick = function()
      );
 }
 
-/*The Code below handles the Custom Order making
+/*
+    The Code below handles the Custom Order making
 */
-// index_ChooseCustomFood.onclick = function()
-// {
-//     $(function()
-//     {
-//          $(".CustomFoodItems_Container").toggle(1000);
-//     });
-// }
+index_ChooseCustomFood.onclick = function()
+{
+    $(function()
+    {
+        //  $(".CustomFoodItems_Container").toggle(1000);
+    });
+}
