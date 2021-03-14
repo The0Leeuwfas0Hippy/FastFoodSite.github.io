@@ -17,6 +17,9 @@ var LoginForm = document.getElementsByClassName("Login"),
 //MakeCustomOrder form
 index_ChooseCustomFood = document.getElementById("index_ChooseCustomFood");
 
+/*Horizonal scrollling buttons */
+var index_LeftScrollButton, index_RightScrollButton;
+
 //the code below runs immediately when the whole class is loaded
 $(function()
             {
@@ -69,9 +72,10 @@ index_RegisterAccountButton.onclick = function()
      );
 }
 
-/*
-    The Code below handles the Custom Order making
-*/
+/* The code below handles horizontal div scrolling */
+
+
+/*  The Code below handles the Custom Order making */
 index_ChooseCustomFood.onclick = function()
 {
     $(function()
