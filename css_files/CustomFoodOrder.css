@@ -104,7 +104,7 @@
 
 .OrderCustomization_buttons button
 {
-    width: 20%;
+    width: 10%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.5em;
@@ -117,6 +117,7 @@
     border-top-right-radius: 25px; */
     box-shadow: 0px 4px 6px 6px  rgb(0, 0, 93);
     cursor: pointer;
+    display: none;
 }
 
 .OrderCustomization_buttons button:focus
