@@ -168,10 +168,49 @@ body
     color: white;
 } 
 
+
 .ProductSliders
 {
     /* margin-bottom: 2em; */
     padding-bottom: 0em;
+}
+
+/* horizontal scrolling div buttons */
+.ScrollButton
+{
+    cursor: pointer;
+    width: 8%;
+    height: 6%;
+    background-color: tomato;
+    font-size: 5em;
+    font-weight: bolder;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+    z-index: 20;
+}
+#index_Scroller1LeftButton
+{
+    /* float: left; */
+    left: 5px;
+}
+#index_Scroller1RightButton
+{
+    /* float: left; */
+    right: 5px;
+}
+
+
+.Slider1Container
+{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    /* position: absolute; */
+    margin-bottom: 3em;
 }
 
 .Products_SliderHeader
@@ -200,7 +239,8 @@ body
 .Products_Slider
 {
     white-space: nowrap;
-    overflow: auto;
+    overflow: hidden;
+    /* float: left; */
     overflow-x: hidden;
     /* overflow-y: hidden; */
     -webkit-overflow-scrolling: touch;

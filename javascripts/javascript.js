@@ -18,7 +18,8 @@ var LoginForm = document.getElementsByClassName("Login"),
 index_ChooseCustomFood = document.getElementById("index_ChooseCustomFood");
 
 /*Horizonal scrollling buttons */
-var index_LeftScrollButton, index_RightScrollButton;
+var index_LeftScrollButton = document.getElementById("index_Scroller1LeftButton"), 
+    index_RightScrollButton = document.getElementById("index_Scroller1RightButton");
 
 //the code below runs immediately when the whole class is loaded
 $(function()
@@ -72,8 +73,32 @@ index_RegisterAccountButton.onclick = function()
      );
 }
 
-/* The code below handles horizontal div scrolling */
 
+/* The code below handles horizontal div scrolling */
+index_RightScrollButton.onclick = function()
+{
+    $(function()
+                {
+
+
+
+                    document.getElementById("index_Products_Slider").scrollLeft += $(".EachProductOnSlider").width();
+                    document.getElementById("index_Products_Slider").css
+                                            ({
+                                                transitionDuration: "2s"
+                                            });
+                }
+    );
+}
+
+index_LeftScrollButton.onclick = function()
+{
+    $(function()
+                {
+                    document.getElementById("index_Products_Slider").scrollLeft -= $(".EachProductOnSlider").width();
+                }
+    );
+}
 
 /*  The Code below handles the Custom Order making */
 index_ChooseCustomFood.onclick = function()
