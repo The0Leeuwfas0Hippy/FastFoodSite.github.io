@@ -80,15 +80,18 @@ index_RightScrollButton.onclick = function()
     $(function()
                 {
 
-
-
                     document.getElementById("index_Products_Slider").scrollLeft += $(".EachProductOnSlider").width();
                     document.getElementById("index_Products_Slider").css
                                             ({
                                                 transitionDuration: "2s"
                                             });
-                }
-    );
+
+                // $(index_LeftScrollButton).css
+                //     ({
+                //         display: "none"
+                //     });
+                 }
+     );
 }
 
 index_LeftScrollButton.onclick = function()
