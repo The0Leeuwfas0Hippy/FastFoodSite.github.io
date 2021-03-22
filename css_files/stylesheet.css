@@ -11,12 +11,8 @@ body
 
 .TopOfIndexPage
 {
-    /* background-image: url("C:/Users/CrunchTime/Desktop/FastFoodJoint/imagery/LoginBackground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
     margin: 0em;
     width: 100%;
-    /* padding-bottom: 1em; */
 }
 
 /* .TopMenuTab
@@ -31,15 +27,10 @@ body
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, blue, transparent);
-    /* height: 5%; */
     border: none;
-    /* border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px; */
     padding: 0.5em;
     margin: auto;
-    /* width: 100%; */
-    /* z-index: -1; */
-    /* position: absolute; */
+    margin-bottom: 1em;
 }
 
 .LogoTab
@@ -62,21 +53,18 @@ body
 {
     display: flex;
     justify-content: center;
-    /* padding: 0em; */
     margin-left: 3em;
     margin-bottom: 0.5em;
     padding-bottom: 5px;
-    /* height: 100%; */
     border-radius: 10px;
-    width: 40%;
+    width: 28rem;
     background-color: white;
 }
 .Menu_Tab_SearchBar input
 {
     margin-bottom: 0em;
-    /* margin-right: 2em; */
     height: 100%; 
-    width: 190%;
+    width: 100%;
     border: none;
     font-size: large;
     font-weight: bold;
@@ -100,9 +88,6 @@ body
     height: 95%;
     color: white;
     background-color:  rgb(31, 31, 100);
-    /* background-image: linear-gradient(to bottom, blue,white, blue); */
-    /* border-style: dotted; */
-    /* box-shadow: 0px 0px 1px 2px blue; */
     border: white;
     border-style: double;
     font-family: 'Times New Roman', Times, serif;
@@ -136,7 +121,7 @@ body
 
 .MenuTab_Menu a
 {
-    size: initial;
+    size: inherit;
     width: 180px;
     height: 35px;
     margin: 6px;
@@ -144,7 +129,7 @@ body
     display: flex;
     justify-content: center;
     color: rgb(0, 0, 70);
-    transition: color 0.7s;
+    /* transition: color 0.7s; */
     text-decoration: none;
     font-weight: bold;    
     z-index: 20;
@@ -152,16 +137,25 @@ body
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
 }
-.MenuTab_Menu a:hover
+/* .MenuTab_Menu a:hover
 {
     border-bottom: 2px dashed;
-    /* color: blue; */
-    /* transition: border-bottom 0.2s; */
-}
+    color: blue;
+    transition: border-bottom 0.2s;
+} */
 .MenuTab_Menu a p
 {
     margin: auto;
 }
+
+.LoginRegistrationLinks
+{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+}
+
 #index_LoginLink, #index_CreateAccountLink
 {
     background-color: rgb(0, 0, 70);
@@ -176,12 +170,14 @@ body
 }
 
 /* horizontal scrolling div buttons */
-.ScrollButton
+.LeftScrollButton, .RightScrollButton
 {
     cursor: pointer;
     width: 8%;
     height: 6%;
-    background-color: rgba(33, 16, 187, 0.5);
+    background-color: rgba(17, 13, 248, 0.5);
+    color: white;
+    /* text-shadow:  black; */
     font-size: 5em;
     font-weight: bolder;
     position: absolute;
@@ -211,7 +207,7 @@ body
     justify-content: center;
     background-color: transparent;
     /* position: absolute; */
-    margin-bottom: 4em;
+    margin-bottom: 3.5em;
     /* padding: 1em; */
     /* height: 35%; */
     padding-bottom: 0em;
@@ -220,8 +216,8 @@ body
 .Products_SliderHeader
 {
     /* background-color: blue; */
-    background-image: linear-gradient(to top, blue, blue, transparent);
-    width: 40%;
+    background-image: linear-gradient(to top, blue, transparent);
+    width: 30%;
     padding-bottom: 0em;
     /* margin-top: 3em; */
     /* box-shadow: 5px 0px 4px 4px blue; */
@@ -259,10 +255,11 @@ body
 {
     width: 380px;
     display: inline-block;
-    height: 385px;
+    height: 400px;
     margin: 10px;
     /* margin-bottom: 0.5em; */
-    box-shadow: 0px 2px 6px 7px white;
+    box-shadow: 0px 2px 6px 7px rgb(0, 0, 70);
+
     /* z-index: 25; */
     border-radius: 25px;
     
@@ -270,15 +267,15 @@ body
 
 .EachProductOnSlider:hover
 {
-    z-index: 1000;
-    box-shadow: 0px 2px 6px 7px rgb(0, 0, 70);
+    z-index: 100;
+    /* box-shadow: 0px 2px 6px 7px rgb(0, 0, 70); */
 }
 
-.EachProductOnSlider:hover > .ProductPrice button
+/* .EachProductOnSlider:hover > .ProductPrice button
 {
     background-color:  rgb(0, 0, 70);
     color: white;
-}
+} */
 .imageEmbed
 {
     height: 75%;
@@ -288,56 +285,42 @@ body
 {
     height: 100%;
     width: 100%;
-     /* border-radius: 25px; */
      border-top-right-radius: 25px;
      border-top-left-radius: 25px;
-    /* z-index: 4; */
 }
 
 .ProductPrice
 {
-    height: 13%;
-    padding-bottom: 0.5em;
-    /* bottom: 0em; */
-    /* display: flex;
-    justify-content: center; */
-    /* margin: auto; */
+    height: 25%;
 }
 
 .ProductPrice div
 {
     width: 100%;
-    height: 100%;
+    /* height: 50%; */
     border: none;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    /* font-size: 1.5em; */
-    color: rgb(0, 0, 70);
+    /* color: rgb(0, 0, 70); */
+    color: white;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: blue;
     align-items: center;
-    /* box-shadow: 1px 1px 7px 6px blue; */
-    /* border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px; */
 }
 
 .PriceAndInformation
 {
     font-size: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-self: center;
-    
+    height: 40%;
 }
 
 .slider1BuyButton
 {
-    /* background-color: orangered; */
-    margin-bottom: 0.5em;
-    /* padding: 8px; */
-    /* width: 50%; */
-    /* height: 100%; */
+    height: 60%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -346,16 +329,28 @@ body
     background-color: green;
     color: white;
     width: 40%;
-    height: 100%;
+    height: 80%;
     border: none;
     margin: 0.5em;
     border-radius: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px 1px 6px 6px rgb(0, 0, 83);
+    cursor: pointer;
+}
+
+.slider1BuyButton button:focus
+{
+    outline: none;
 }
 
 #index_Products_SliderHeader2
 {
-    background-image: linear-gradient(to top, white, white, transparent);
-    width: 40%;
+    background-image: linear-gradient(to top, white, transparent);
+    width: 30%;
+    z-index: 90;
+    /* background-color: transparent; */
 }
 #index_Products_SliderHeader2 h2
 {
@@ -420,10 +415,10 @@ body
 
 #index_ChipsPrices
 {
-    height: 14%;
-    margin-top: 0.5em;
-    /* display: flex;
-    justify-content: center; */
+    height: 12%;
+    margin-top: 0.3em;
+    display: flex;
+    justify-content: center;
     /* border-top-left-radius: 40px;
     border-top-right-radius: 40px; */
 }
@@ -442,7 +437,7 @@ body
     border-radius: 25px;
     /* border-top-left-radius: 40px;
     border-top-right-radius: 40px; */
-    width: 90%;
+    width: 95%;
     /* bottom: 2px; */
     padding: 0.5em;
     display: inline-flex;

@@ -1,9 +1,18 @@
+/* *
+{
+   background-image: url("C:/Users/CrunchTime/Desktop/Zenny/Web_Development/FastFoodJoint/imagery/LoginBackground.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+} */
+
 body
 {
     width: 100%;
     height: 100%;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    margin: 0em;
+   background-image: url("C:/Users/CrunchTime/Desktop/Zenny/Web_Development/FastFoodJoint/imagery/LoginBackground.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Login, .Registration
@@ -12,7 +21,6 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .LoginFormContainer, .RegistrationFormContainer

@@ -4,6 +4,7 @@
 */
 var index_ProductSlider = document.getElementsByClassName("EachProductOnSlider"),
     index_Slider = document.getElementById("index_Products_Slider");
+var index_Products_Slider2;
 
 //Menu buttons on index page
 var SeeFullMenu, ContactUs, MakeCustomOrder, 
@@ -81,16 +82,7 @@ index_RightScrollButton.onclick = function()
                 {
 
                     document.getElementById("index_Products_Slider").scrollLeft += $(".EachProductOnSlider").width();
-                    document.getElementById("index_Products_Slider").css
-                                            ({
-                                                transitionDuration: "2s"
-                                            });
-
-                // $(index_LeftScrollButton).css
-                //     ({
-                //         display: "none"
-                //     });
-                 }
+                }
      );
 }
 
@@ -102,6 +94,13 @@ index_LeftScrollButton.onclick = function()
                 }
     );
 }
+
+
+function HorizontalMenuScroll(ScrollButtonPressed, horizontalDiv)
+{
+    
+}
+
 
 /*  The Code below handles the Custom Order making */
 index_ChooseCustomFood.onclick = function()
