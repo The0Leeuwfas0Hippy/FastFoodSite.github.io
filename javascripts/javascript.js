@@ -19,8 +19,8 @@ var LoginForm = document.getElementsByClassName("Login"),
 index_ChooseCustomFood = document.getElementById("index_ChooseCustomFood");
 
 /*Horizonal scrollling buttons */
-var index_LeftScrollButton = document.getElementById("index_Scroller1LeftButton"), 
-    index_RightScrollButton = document.getElementById("index_Scroller1RightButton");
+var index_LeftScrollButton1 = document.getElementById("index_Scroller1LeftButton"), 
+    index_RightScrollButton1 = document.getElementById("index_Scroller1RightButton");
 
 //the code below runs immediately when the whole class is loaded
 $(function()
@@ -76,17 +76,16 @@ index_RegisterAccountButton.onclick = function()
 
 
 /* The code below handles horizontal div scrolling */
-index_RightScrollButton.onclick = function()
+index_RightScrollButton1.onclick = function()
 {
     $(function()
                 {
-
                     document.getElementById("index_Products_Slider").scrollLeft += $(".EachProductOnSlider").width();
                 }
      );
 }
 
-index_LeftScrollButton.onclick = function()
+index_LeftScrollButton1.onclick = function()
 {
     $(function()
                 {

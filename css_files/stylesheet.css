@@ -1,3 +1,8 @@
+/* *
+{
+    z-index: -1;
+} */
+
 
 body
 {
@@ -7,19 +12,27 @@ body
    background-image: url("C:/Users/CrunchTime/Desktop/Zenny/Web_Development/FastFoodJoint/imagery/LoginBackground.jpg");
    background-repeat: no-repeat;
     background-size: cover;
+    /* display: block; */
 }
 
 .TopOfIndexPage
 {
     margin: 0em;
     width: 100%;
+    background-color: rgba(11, 16, 160, 0.5);
 }
 
-/* .TopMenuTab
+.TopMenuTab
 {
-    position: absolute;
-    margin-bottom: 5em;
-} */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: initial;
+    /* background-image: linear-gradient(to bottom, blue, blue, transparent); */
+    /* opacity: 1; */
+    /* margin-bottom: 5em; */
+}
 
 .Menu_Tab
 {
@@ -82,7 +95,7 @@ body
 
 .Menu_Tab_SearchBar button
 {
-    width: 40%;
+    width: 30%;
     border-radius: 10px;
     margin: 3px;
     height: 95%;
@@ -167,6 +180,8 @@ body
 {
     /* margin-bottom: 2em; */
     padding-bottom: 0em;
+    top: 2;
+    /* position: absolute; */
 }
 
 /* horizontal scrolling div buttons */
@@ -188,15 +203,14 @@ body
     border-radius: 50%;
     z-index: 20;
 }
-#index_Scroller1LeftButton
+/* .LeftScrollButton, .RightScrollButton: */
+
+#index_Scroller1LeftButton, #index_Scroller2LeftButton
 {
-    /* float: left; */
     left: 5px;
-    /* display: none; */
 }
-#index_Scroller1RightButton
+#index_Scroller1RightButton, #index_Scroller2RightButton
 {
-    /* float: left; */
     right: 5px;
 }
 
@@ -257,10 +271,7 @@ body
     display: inline-block;
     height: 400px;
     margin: 10px;
-    /* margin-bottom: 0.5em; */
     box-shadow: 0px 2px 6px 7px rgb(0, 0, 70);
-
-    /* z-index: 25; */
     border-radius: 25px;
     
 }
@@ -312,10 +323,22 @@ body
 .PriceAndInformation
 {
     font-size: 1em;
+    font-weight: lighter;
     display: flex;
     justify-content: center;
     align-self: center;
     height: 40%;
+    
+}
+
+.PriceAndInformation div
+{
+    padding: 3px;
+    border: white;
+    border-style: groove;
+    width: 95%;
+    border-width: 1px;
+    border-radius: 20px;
 }
 
 .slider1BuyButton
@@ -357,6 +380,12 @@ body
     text-shadow: 0px 3px 4px white;
     color: rgb(0, 0, 83);
 }
+#SliderContainer2
+{
+    padding-top: 0em;
+    margin-top: 0em;
+}
+
 .ProductSlider2
 {
     white-space: nowrap;
@@ -365,13 +394,13 @@ body
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     position: relative;
-    margin-top: 0em;
+    /* margin-top: 0em; */
     /* padding-bottom: 2em; */
     height: 520px;
     /* display: flex;
     justify-content: space-evenly; */
     background-color: white;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     /* background-image: linear-gradient(to bottom, white, white); */
     /* opacity: 2; */
 }
